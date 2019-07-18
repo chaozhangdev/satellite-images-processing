@@ -24,11 +24,11 @@ It is impossible to totally remove clouds from images because we never know what
 
 Things behind clouds can be trees, mountains or even aliens.
 
-We only can remove clouds by a original non-cloud image as a mask.
+We only can remove clouds by an original non-cloud image as a mask.
 
 However, it is not practical because the cloud image should be abandoned since we have a non-cloud image.
 
-Without the mask image, the only thing we can do is to romove clouds from a image as accurate as possible.
+Without the mask image, the only thing we can do is to remove clouds from a image as accurate as possible.
 
 ### Cloud Detection
  
