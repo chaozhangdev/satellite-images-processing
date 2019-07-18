@@ -20,7 +20,7 @@ property: cloud cover < 20%
 
 ### Question
 
-It is impossible to remove clouds from images because we never know what is behind clouds. 
+It is impossible to totally remove clouds from images because we never know what is behind clouds. 
 
 Things behind clouds can be trees, mountains or even aliens.
 
