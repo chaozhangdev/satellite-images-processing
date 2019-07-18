@@ -22,11 +22,13 @@ property: cloud cover < 20%
 
 It is impossible to remove clouds from images because we never know what is behind clouds. 
 
-Thing behind clouds can be trees, mountains or even aliens.
+Things behind clouds can be trees, mountains or even aliens.
 
 We only can remove clouds by a original non-cloud image as a mask.
 
-Without mask image, the only thing we can do is to romove clouds as accurate as possible.
+However, it is not practical because the cloud image should be abandoned since we have a non-cloud image.
+
+Without the mask image, the only thing we can do is to romove clouds from a image as accurate as possible.
 
 ### Cloud Detection
  
@@ -40,7 +42,7 @@ The threshold covers white and grey pixels including cloud and cloud shadow.
 
 Remove cloud pixels and replace them by nearest non-cloud pixels. 
 
-The method is simple based on 4 direction(up, down, left, right) "BFS" to find the nearest pixel which is not cloud pixel. 
+The method is simply based on 4 direction(up, down, left, right) "BFS" to find the nearest pixel which is not cloud pixel. 
 
 Replace the cloud pixel by this nearest pixel.
 
@@ -58,13 +60,13 @@ To finish the assignment efficiently, using this simple algorithm is a fast meth
 
 However, it is not accurate. It is a kind of guessing pixels for replacing center pixels. 
 
-To more precisely replace cloud pixels, it requires a non-cloud mask image. 
+To precisely replace cloud pixels, it requires a non-cloud mask image. 
 
 By comparing difference between two pixels one in the cloud image one in the mask, we can replace cloud pixels by the mask. 
 
 But it is meaningless and not practical because if there is a non-cloud mask, generally cloud images should be abandoned. 
 
-As for me, I have one asssumption using deep learning for cloud removal. 
+As for me, I have one asssumption using deep learning for cloud removal without mask images. 
 
 Let the computer learn enough images for one sepecific area, then by enough error corretions it can remove cloud pixels automatically. 
 
